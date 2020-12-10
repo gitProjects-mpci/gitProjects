@@ -4,10 +4,8 @@ def q():
     racine.destroy()
 
 if __name__ == '__main__':
-    
-
     racine = tk.Tk()
-
+#boutons numéraires
     bouton1 = tk.Button(racine, text = " 1 ", activebackground = "black",
                          height = 2, width = 4, bg = "gray69"          
                        )
@@ -56,9 +54,20 @@ if __name__ == '__main__':
     ecran = tk.Entry(racine, text = "Saisir...", width = 20)
     ecran.grid(column =0, row = 0, columnspan = 3)
 
+    bouton0 = tk.Button(racine, text = " 0 ", activebackground = "black",
+                         height = 2, width = 4, bg = "gray69"
+                       )
+    bouton0.grid(column = 1, row = 4)
 
+    blankbutton = tk.Button(racine, text = "   ", state = 'disabled',
+                             height = 2, width = 4, bg = "gray69"
+                           )
+    blankbutton.grid(column = 0, row = 4)
 
-
+    virg = tk.Button(racine, text = " . ", activebackground = "black",
+                      height = 2, width = 4, bg = "gray69"
+                    )
+    virg.grid(column = 2, row = 4)
 
     quitter = tk.Button(racine, text = "quitter", command = q, height =1, width = 15)
     quitter.grid(column = 0, row = 5, columnspan = 3)

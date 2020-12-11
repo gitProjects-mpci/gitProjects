@@ -1,6 +1,6 @@
 from tkinter import * 
 
-def expression(nombres):
+def expressions(nombres):
     global operateur
     operateur = operateur + str(nombres)
     text_input.set(operateur)
@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
     #boutons numéraires
   bouton1 = Button(racine, text = " 1 ", activebackground = "black", height = 2, width = 4,
-                   bg = "gray69", command = expression(1))          
+                   bg = "gray69")          
   bouton1.grid(column = 0, row = 3) 
 
   bouton2 = Button(racine, text = " 2 ", activebackground = "black", height = 2, width = 4,
